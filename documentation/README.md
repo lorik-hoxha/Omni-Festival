@@ -23,6 +23,7 @@ Adea Sadiku – as70563@ubt-uni.net https://github.com/adea-123
 ## Teknologjitë e Përdorura
 
 - **Frontend**: HTML, CSS, JavaScript
+- **Backend** : PHP, MySQL
 
 ## Udhëzime për Instalimin
 
