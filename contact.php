@@ -34,7 +34,7 @@ session_start();
     <section id="contactSection">
       <h3 class="heading">Contact Us</h3>
       <div id="logos">
-        <img src="/style/socials.png" alt="Socials Logo" class="logo-img">
+        <img src="style/socials.png" alt="Socials Logo" class="logo-img">
       </div>
       <div class="contact-container">
         <div class="contact-info">

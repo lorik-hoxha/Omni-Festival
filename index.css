@@ -1,0 +1,232 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Century Gothic', sans-serif;
+    background-image: url('Images/crowd.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #333;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    font-size: 35px;
+    font-weight: bold;
+    color: #333;
+}
+
+nav {
+    overflow-x: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    white-space: nowrap;
+}
+
+nav ul li {
+    margin-left: 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: normal;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #007BFF;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* MAIN */
+main {
+    position: relative;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* BANNER */
+.banner {
+    width: 100%;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.banner-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.banner-content h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.banner-content p {
+    font-size: 24px;
+}
+
+/* SLIDER SECTION */
+.slider-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+/* SLIDER */
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 3px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000; /* Opsionale: Një ngjyrë sfondi nëse imazhi nuk mbush plotësisht hapësirën */
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.slide {
+    min-width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+}
+
+/* SLIDER BUTTONS */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* FOOTER */
+footer {
+    margin-top: 50px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.ticket-sale {
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.ticket-sale:hover {
+    text-decoration: underline;
+}
+
+/* RESPONSIVE DESIGN */
+/* Për tabletat */
+@media (max-width: 768px) {
+    .banner-content h1 {
+        font-size: 36px;
+    }
+
+    .banner-content p {
+        font-size: 18px;
+    }
+
+    .slider {
+        height: 350px;
+    }
+
+    .slide {
+        height: 350px;
+    }
+
+    .prev, .next {
+        font-size: 18px;
+        padding: 8px 12px;
+    }
+}
+
+/* Për celularët */
+@media (max-width: 480px) {
+    .banner-content h1 {
+        font-size: 28px;
+    }
+
+    .banner-content p {
+        font-size: 16px;
+    }
+
+    .slider {
+        height: 250px;
+    }
+
+    .slide {
+        height: 250px;
+    }
+
+    .prev, .next {
+        font-size: 16px;
+        padding: 6px 10px;
+    }
+}
